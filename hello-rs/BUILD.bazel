@@ -2,6 +2,9 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_rust//rust:rust.bzl", "rust_binary")
 
+print("Calls to print() will be outputted at DEBUG level, by default.")
+print("This is Starlark, a subset of Python. https://github.com/bazelbuild/starlark/")
+
 rust_binary(
     name = "hello_world",
     srcs = ["src/main.rs"],
